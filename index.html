@@ -13,15 +13,25 @@
 
     img {
       margin-left: 20px;
-      max-height: 235px
+      max-height: 235px;
+      box-shadow: 0px 0px 50px #2f302f;
     }
 
-    .underline {
-      text-decoration: underline
+    .btn-delete {
+      text-decoration: underline;
+      color: blue
     }
 
-    #color {
-      color: blue;
+    img:hover {
+      transform: scale(1.1, 1.1);
+      -webkit-transform: scale(1.1, 1.1);
+      -moz-transform: scale(1.1, 1.1);
+    }
+
+    .img_expand {
+      transition: all 0.7s ease-in-out 1.4s;
+      -moz-transition: all 0.7s;
+      -webkit-transition: all 0.7s;
     }
   </style>
 
@@ -38,10 +48,10 @@
     <li><a href="https://www.whoscored.com/">如何才能实现分析球员比赛数据与比赛结果的关系</a></li>
     <li><a href="http://www.vmeiwei.com/uploadfile/2019/0220/20190220023542942.jpg">今天吃什么</a></li>
   </ol>
-  <img src="img/THEO.png" alt="THEO剧照" title="THEO剧照">
-  <img src="THEO.png" alt="好像" title="好像">
-  <img src="THEO.png" alt="有点" title="有点">
-  <img src="THEO.png" alt="帅" title="帅">
+  <img src="img/THEO.png" alt="THEO剧照" title="THEO剧照" class="img_expand">
+  <img src="img/THEO.png" alt="好像" title="好像" class="img_expand">
+  <img src="img/THEO.png" alt="有点" title="有点" class="img_expand">
+  <img src="img/THEO.png" alt="帅" title="帅" class="img_expand">
   <div>
     <table border=1 bordercolor="red">
       <caption>我想要的</caption>
@@ -50,20 +60,20 @@
         <td>2000</td>
         <td>耳机</td>
         <td>
-          <span class="underline" id="color">删除</span>
-        </td>>
+          <span class="btn-delete">删除</span>
+        </td>
       </tr>
       <tr>
         <td>2000</td>
         <td>键盘</td>
         <td>
-          <span class="underline" id="color">删除</span>
+          <span class="btn-delete">删除</span>
         </td>
       <tr>
         <td>10000</td>
         <td>无人机</td>
         <td>
-          <span class="underline" id="color">删除</span>
+          <span class="btn-delete">删除</span>
         </td>
       <tr>
         <td colspan="2">总价</td>
